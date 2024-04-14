@@ -1,33 +1,3 @@
-// // src/components/Dashboard.js
-// import React from 'react';
-// import { Button, TextField } from '@mui/material';
-
-// const Dashboard = () => {
-//     return (
-//         <div>
-//             <h2>Dashboard</h2>
-//             <p>This is the dashboard component.</p>
-//             <TextField
-//                 required
-//                 id="outlined-required-firstName"
-//                 label="First Name"
-//                 variant="filled"
-//             />
-//             <TextField
-//                 required
-//                 id="outlined-required-lastName"
-//                 label="Last Name"
-//                 variant="filled"
-//             />
-
-//             <Button variant="contained" href="/dashboard">Join a Room</Button>
-//             <Button variant="contained" href="/dashboard">Create a Room</Button>
-//         </div>
-//     );
-// }
-
-// export default Dashboard;
-// src/components/Dashboard.js
 import React from 'react';
 import { Button, TextField, Typography, Grid, Paper, Box } from '@mui/material';
 
@@ -62,10 +32,10 @@ const Dashboard = () => {
                     </Grid>
                 </Grid>
             </Paper>
-            <Button variant="contained" color="primary" href="/join-room" style={{ marginRight: '10px' }}>
+            <Button variant="contained" color="primary" href="/room/join" style={{ marginRight: '10px' }}>
                 Join a Room
             </Button>
-            <Button variant="contained" color="primary" href="/create-room">
+            <Button variant="contained" color="primary" href="/room/create">
                 Create a Room
             </Button>
         </Box>
